@@ -1,0 +1,41 @@
+
+.Usuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-style: normal;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 10%;
+    
+}
+
+.UsuarioDados{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.UsuarioDados h1{
+    
+    width: 100%;
+    margin-bottom: 0%;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.UsuarioDados h2{
+    width: 100%;
+    font-size: 95%;
+}
+
+.UsuarioFoto{
+    margin-top: 20%;
+    max-width: 30%;
+    border-radius: 100%;
+}
+
