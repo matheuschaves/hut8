@@ -9,9 +9,13 @@ function BoxProf(props){
     return (
         
         <div className="BoxProf">
-            <img src={props.foto}/>
-            <h1>{props.nome}</h1>
-            <h2>{props.funcao}</h2>
+            <div className="ProfFoto">
+                <img src={props.foto} />
+            </div>
+            <div className="infosProf">
+                <h1>{props.nome}</h1>
+                <h2>{props.funcao}</h2>
+            </div>
 
         </div>
 

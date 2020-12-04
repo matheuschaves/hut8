@@ -1,7 +1,7 @@
 import React, { useEffect, useState }from 'react'
 import './styles.css';
 import {getPublicObjects} from '../../services/requests'
-import Resumo from '../../components/Resumo'
+import ResumoCurso from '../../components/ResumoCurso'
 import CourseInformation from '../../components/CourseInformation'
 import {useParams} from 'react-router-dom'
 
@@ -22,7 +22,7 @@ function Curso(){
            {aluno ? (
             <>
             <div className="Conteudo">
-                <Resumo titulo={aluno[0].courses[Number(id)].course} subtitle={aluno[0].courses[Number(id)].class} />
+                <ResumoCurso titulo={aluno[0].courses[Number(id)].course} subtitle={aluno[0].courses[Number(id)].class} />
                 <CourseInformation titulo ="Próximas atividades" />
               
             </div>
