@@ -1,16 +1,15 @@
 import React, {useEffect, useState} from 'react'
-import './App.css';
+import { BrowserRouter,  Switch, Route} from 'react-router-dom'
+import {getPublicObjects} from './services/requests'
 import DashBoard from './containers/DashBoard';
 import Cursos from './containers/Cursos'
 import Curso from './containers/Curso'
 import Sidebar from './components/Sidebar'
-import { BrowserRouter,  Switch, Route} from 'react-router-dom'
-import {getPublicObjects} from './services/requests'
+import Loader from './components/Loader'
+import './App.css';
 
 function App() {
   const [aluno,setAluno] = useState(null)
-
-    
 
   useEffect(() => {
       getPublicObjects()
@@ -36,14 +35,11 @@ function App() {
               <Route path="/Curso/:id" >
                 <Curso />
               </Route>
-              
-
-
             </Switch>
         </div>
       ) : (
         <div>
-          <p>Carregando</p>
+          <Loader />
         </div>
       )}
     </BrowserRouter>

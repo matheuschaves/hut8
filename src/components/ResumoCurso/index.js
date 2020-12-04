@@ -1,20 +1,18 @@
 import React, {useState, useEffect} from 'react'
-import './styles.css';
+import {useParams} from 'react-router-dom'
+import {getPublicObjects} from '../../services/requests'
+import BoxInformation from '../Boxinformation'
+import BoxProf from '../BoxProf'
+import Loader from '../Loader'
 import graduationCap from '../../assets/graduation-cap-solid.svg'
 import tasks from '../../assets/tasks-solid.svg'
 import userGraduate from '../../assets/user-graduate-solid.svg'
-import BoxInformation from '../Boxinformation'
-import {getPublicObjects} from '../../services/requests'
-import BoxProf from '../BoxProf'
-import {useParams} from 'react-router-dom'
-
-
+import './styles.css';
 
 function ResumoCurso(props){
     const [aluno,setAluno] = useState(null)
     const {id} = useParams();
     
-
     useEffect(() => {
         getPublicObjects()
         .then(res => {
@@ -22,10 +20,7 @@ function ResumoCurso(props){
         })
     },[])
 
-
-
-    return (
-                
+    return (         
         <div className="Resumo">
         {aluno ? (
             <div>
@@ -44,13 +39,9 @@ function ResumoCurso(props){
                     <BoxInformation numero={aluno[0].courses[Number(id)].overview.enrolledStudents} information="Alunos matriculados" foto={userGraduate}/>
                 </div>
             </div>) :(
-                <div>
-                    <h1>Carregando...</h1>
-                </div>
+                <Loader />
             )}
-
         </div>
-
     )
 }
 

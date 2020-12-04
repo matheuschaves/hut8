@@ -1,13 +1,12 @@
 import React, {useState , useEffect} from 'react'
-import './styles.css';
-import BoxLinkWPhoto from '../BoxLinkWPhoto'
-import {getPublicObjects} from '../../services/requests'
 import {Link} from 'react-router-dom'
+import {getPublicObjects} from '../../services/requests'
+import BoxLinkWPhoto from '../BoxLinkWPhoto'
+import Loader from '../Loader'
+import './styles.css';
 
 function NextActivities(props){
     const [aluno, setAluno] = useState(null)
-
-    
 
     useEffect(() => {
         getPublicObjects()
@@ -27,18 +26,13 @@ function NextActivities(props){
                                     <BoxLinkWPhoto foto={activitie.image} typeCourse={activitie.course} name={activitie.title} turma={activitie.deadline}/>
                                 </div>
                                     ))
-                
                 }
                 </div>)
             :(
-                <div>
-                    <p>Caregando</p>
-                </div>
+                <Loader/>
             )}
-            </div>
-            
+            </div>  
         </div>
-
     )
 }
 

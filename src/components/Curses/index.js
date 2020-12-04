@@ -1,8 +1,9 @@
 import React, {useState , useEffect} from 'react'
-import './styles.css';
-import BoxLinkWPhoto from '../BoxLinkWPhoto'
-import {getPublicObjects} from '../../services/requests'
 import {Link} from 'react-router-dom'
+import {getPublicObjects} from '../../services/requests'
+import BoxLinkWPhoto from '../BoxLinkWPhoto'
+import Loader from '../Loader'
+import './styles.css';
 
 function Curses(props){
     const [aluno, setAluno] = useState(null)
@@ -31,9 +32,7 @@ function Curses(props){
                 }
                 </div>)
             :(
-                <div>
-                    <p>Caregando</p>
-                </div>
+                <Loader />
             )}
             </div>
             

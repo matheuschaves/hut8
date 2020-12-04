@@ -1,14 +1,14 @@
 import React, { useEffect, useState }from 'react'
-import './styles.css';
+import {useParams} from 'react-router-dom'
 import {getPublicObjects} from '../../services/requests'
 import ResumoCurso from '../../components/ResumoCurso'
 import CourseInformation from '../../components/CourseInformation'
-import {useParams} from 'react-router-dom'
+import Loader from '../../components/Loader'
+import './styles.css';
 
 function Curso(){
     const [aluno,setAluno] = useState(null)
     const {id} = useParams();
-    
 
     useEffect(() => {
         getPublicObjects()
@@ -27,7 +27,7 @@ function Curso(){
               
             </div>
             </>
-            ) : (<p> Carregando </p>)}
+            ) : (<Loader />)}
         </div>
 
     )

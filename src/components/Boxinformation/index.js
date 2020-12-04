@@ -1,8 +1,6 @@
 import React from 'react'
 import './styles.css';
 
-
-
 function BoxInformation(props){
     return(
         <div className="BoxInformation">
@@ -15,12 +13,11 @@ function BoxInformation(props){
             </div>
         </div>
     )
-
 }
 
 function leftPad(value, totalWidth, paddingChar) {
     var length = totalWidth - value.toString().length + 1;
     return Array(length).join(paddingChar || '0') + value;
-  }
+}
 
 export default BoxInformation;

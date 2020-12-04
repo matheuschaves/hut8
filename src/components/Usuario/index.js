@@ -1,6 +1,6 @@
 import React from 'react'
-import './styles.css';
 import Image from '../../assets/fausto.jpg'
+import './styles.css';
 
 function Usuario(props){
     return (

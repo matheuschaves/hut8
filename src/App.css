@@ -1,4 +1,9 @@
 .PlaneBase{
   display: grid;
   grid-template-columns: 1fr 4fr ;
+  
+}
+
+.Sidebar{
+  background-color: #F6F6F6;
 }

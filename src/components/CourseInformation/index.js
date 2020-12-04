@@ -1,14 +1,13 @@
 import React, {useState , useEffect} from 'react'
-import './styles.css';
-import BoxLinkWPhoto from '../BoxLinkWPhoto'
-import {getPublicObjects} from '../../services/requests'
 import {useParams} from 'react-router-dom'
+import {getPublicObjects} from '../../services/requests'
+import BoxLinkWPhoto from '../BoxLinkWPhoto'
+import Loader from '../Loader'
+import './styles.css';
 
 function CourseInformation(props){
     const [aluno, setAluno] = useState(null)
     const {id} = useParams();
-
-    
 
     useEffect(() => {
         getPublicObjects()
@@ -28,17 +27,12 @@ function CourseInformation(props){
                                 <BoxLinkWPhoto foto={activitie.image} typeCourse={activitie.course} name={activitie.title} turma={activitie.deadline}/>
                             </div>
                                 ) )}
-                            
                     </div>
                 </div>
             ):(
-                <div>
-                    <p>Carregando</p>
-                </div>
-            )}
-            
+                <Loader/>
+            )} 
         </div>
-
     )
 }
 

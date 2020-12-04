@@ -13,10 +13,7 @@ function Menu(props){
                     <h1>{props.nome}</h1>
                 </div>
             }
-           
-            {/* Colocar route usando props.route */}
         </div>
-
     )
 }
 

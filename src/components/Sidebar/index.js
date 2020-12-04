@@ -1,16 +1,15 @@
 import React from 'react'
+import {Link, useLocation} from 'react-router-dom'
 import Usuario from '../Usuario'
 import Menu from '../Menu'
 import './styles.css';
-import {Link, useLocation} from 'react-router-dom'
 
 function Sidebar(props){
     const location = useLocation().pathname;
 
     return (
         <div className="Princiapl">
-            <Usuario nome={props.name}  curso={props.curso} />
-            
+            <Usuario nome={props.name}  curso={props.curso} />  
             <div >
                 {location == "/" ? 
                     <div className="Paginas">
@@ -23,8 +22,6 @@ function Sidebar(props){
                     </div>}
             </div>
         </div>
-        
-
     )
 }
 
