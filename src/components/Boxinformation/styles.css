@@ -1,0 +1,56 @@
+.BoxInformation{
+    display: grid;
+    grid-template-columns: 2fr 1fr;   
+    background-color:#F6F6F6 ;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 236px;
+    height: 87px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.BoxInformation h1{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0;
+    color: #595959;
+    
+    
+}
+
+.BoxInformation h2{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 25px;
+    color: #A5A5A5;
+}
+
+
+.foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+.foto img{
+    max-width: 60%;
+}
+
+.BoxInformation:hover{
+    box-shadow: 2px 2px #E5E5E5;
+}

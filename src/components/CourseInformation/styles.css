@@ -1,0 +1,11 @@
+.CourseInformation{
+    margin-top: 61px;
+    color: #555555;
+}
+
+.Bloco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}

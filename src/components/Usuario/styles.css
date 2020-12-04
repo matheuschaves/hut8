@@ -21,21 +21,25 @@
 }
 
 .UsuarioDados h1{
-    
-    width: 100%;
-    margin-bottom: 0%;
-    font-size: 125%;
+    color: #727272;
+    font-style: normal;
     font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 0;
 }
 
 .UsuarioDados h2{
-    width: 100%;
-    font-size: 95%;
+    color: #727272;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;  
 }
 
 .UsuarioFoto{
     margin-top: 20%;
-    max-width: 30%;
+    width: 90px;
     border-radius: 100%;
 }
 

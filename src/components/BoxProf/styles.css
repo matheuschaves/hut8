@@ -1,0 +1,10 @@
+.BoxProf{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.BoxProf img{
+    width: 48px;
+    height: 48px;
+}

@@ -1,0 +1,52 @@
+.BoxLinkWPhoto{
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color:  #FCFCFC;  
+    border-radius: 10%;
+    overflow: hidden;
+    margin-bottom: 10%;
+    
+}
+
+
+
+.LogoCurso{
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 1%;
+
+}
+
+.BoxLinkWPhoto h1{
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    padding-left: 7%;
+    font-size: 12px;
+    margin: 0;
+    color: #4B4B4B;
+    
+}
+
+.BoxLinkWPhoto h2{
+    font-style: normal;
+    font-weight: 600;
+    padding: 0;
+    padding-left: 7%;
+    font-size: 10px;
+    color: #737373;
+}
+
+.BoxLinkWPhoto h3{
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    padding-left: 7%;
+    font-size: 8px;
+    color: #8E8E8E;
+}
+
+.BoxLinkWPhoto:hover{
+    box-shadow: 2px 2px #E5E5E5;
+}

@@ -1,20 +1,22 @@
 
 .Menu {
-    display: flex;
-    justify-content: center;
-    align-items: flex-stretch;
-    padding: 2.5%;
-    padding-left: 0;
-    
+    padding: 2.5%;    
+    padding-left: 20%;
 }
 
 .Menu h1{
-    align-self: center;
+    align-self: left;
     text-align: left;
     align-items: left;
     font-size: 144%;
+    font-weight: 400;
+    
 }
 
 .Menu:hover{
     background-color:  #E5E5E5;
+}
+
+.Menu .set{
+    font-weight: 700;
 }

@@ -1,0 +1,16 @@
+.Resumo {
+    color: #555555;
+}
+
+.Resumo h1{
+    margin-bottom: 0;
+}
+
+.Resumo h2{
+    margin-top: 0;
+}
+
+.BoxInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

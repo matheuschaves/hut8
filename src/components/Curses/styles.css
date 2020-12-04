@@ -1,0 +1,15 @@
+.Resumo{
+    
+}
+
+.Bloco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+
+.link{
+    text-decoration: none;
+    color: #6A6A6A;
+}

@@ -5,7 +5,15 @@ function Menu(props){
 
     return (
         <div className="Menu">
-           <h1>{props.nome}</h1>
+            {props.set == "s" ? 
+                <div>
+                    <h1 className="set">{props.nome}</h1>
+                </div>
+            :   <div>
+                    <h1>{props.nome}</h1>
+                </div>
+            }
+           
             {/* Colocar route usando props.route */}
         </div>
 
