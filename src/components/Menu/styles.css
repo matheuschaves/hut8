@@ -8,8 +8,10 @@
     align-self: left;
     text-align: left;
     align-items: left;
-    font-size: 144%;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
     
 }
 
